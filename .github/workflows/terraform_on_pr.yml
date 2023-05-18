@@ -9,12 +9,6 @@ on:
       - '**.tf'
 
 jobs:
-  #setup:
-  #  runs-on: ubuntu-latest
-  #  steps:
-  #    - uses: actions/checkout@v3
-  #    - uses: ./.github/actions/setup-clean-comments
-
   terraform-steps:
     runs-on: ubuntu-latest
     needs: [ setup ]
