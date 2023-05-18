@@ -7,7 +7,7 @@ module "management-zone" {
     { selector = "type(\"SERVICE\"),tag(\"test2\")" },
   ]
   dimension_rules = [
-  {
+    {
       dimension_rule = {
         applies_to = "METRIC"
         dimension_conditions = [
