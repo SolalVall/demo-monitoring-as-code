@@ -33,7 +33,7 @@ jobs:
           gcloud: ${{ secrets.GCS_JSON }}
 
       - name: Test action
-        uses: SolalVall/action-terraform@main
+        uses: SolalVall/action-terraform@develop
         with:
           artifact_workflow: false
           directory: terraform/${{ matrix.environment }}

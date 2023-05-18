@@ -1,6 +1,6 @@
 terraform {
   backend "gcs" {
-    bucket = "demo-terraform-dynatrace"
+    bucket = "demo-terraform-dynatraceEE"
     prefix = "my-team/stage"
   }
 }

@@ -13,7 +13,7 @@ module "slo" {
       filter_name      = "My Web Application"
     }
     "slo2" = {
-      name             = "My Web App slo user experience (prd)"
+      name             = "My Web App slo user experience 2 (prd)"
       description      = "This is a slo created with terraform for measuring application user experience for app with tag test"
       warning          = 99.90
       target           = 98.50
