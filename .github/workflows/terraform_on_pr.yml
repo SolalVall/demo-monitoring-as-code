@@ -9,11 +9,11 @@ on:
       - '**.tf'
 
 jobs:
-  setup:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: ./.github/actions/setup-clean-comments
+  #setup:
+  #  runs-on: ubuntu-latest
+  #  steps:
+  #    - uses: actions/checkout@v3
+  #    - uses: ./.github/actions/setup-clean-comments
 
   terraform-steps:
     runs-on: ubuntu-latest
@@ -41,7 +41,6 @@ jobs:
           tf_init: true
           tf_lint: true
           tf_plan: true
-          exec_in_parallel: true
         env:
           DYNATRACE_ENV_URL: ${{ secrets[format('DYNATRACE_{0}_ENV_URL', matrix.environment)] }}
           DYNATRACE_API_TOKEN: ${{ secrets[format('DYNATRACE_{0}_API_TOKEN', matrix.environment)] }}
